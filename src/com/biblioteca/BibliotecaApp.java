@@ -6,12 +6,12 @@ import com.biblioteca.Message;
  */
 public class BibliotecaApp {
     private Message message;
+    private Bookshelf bookshelf;
 
     public static void main(String [] args) {
         Message message = new Message();
         message.print();
-
+        Bookshelf bookshelf = new Bookshelf();
+        bookshelf.printBooksAsColumn();
     }
-
-
 }
