@@ -6,6 +6,6 @@ package com.biblioteca;
 public class Message {
 
     public void print() {
-        System.out.print("Welcome to biblioteca!");
+        System.out.print("Welcome to biblioteca!\n");
     }
 }

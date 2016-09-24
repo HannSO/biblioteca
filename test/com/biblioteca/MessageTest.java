@@ -29,6 +29,6 @@ public class MessageTest {
     @Test
     public void printsMessage() {
         message.print();
-        assertEquals("Welcome to biblioteca!", outputStream.toString());
+        assertEquals("Welcome to biblioteca!\n", outputStream.toString());
     }
 }

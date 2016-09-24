@@ -10,13 +10,22 @@ import java.util.Date;
  */
 public class Book {
 
+
+
    private  String author;
 
-    private Date  datePublished;
+    private Date datePublished;
 
     private String title;
 
     private String stringDatePublished;
+
+    public Book (String bookAuthor, String bookDate, String bookTitle){
+        author = bookAuthor;
+        setDatePublished(bookDate);
+        title = bookTitle;
+    }
+
 
 
     public String getAuthor(){
@@ -35,9 +44,7 @@ public class Book {
         return title;
     }
 
-   public void setAuthor(String name){
-       author = name;
-   }
+
 
    public void setDatePublished(String stringDate){
 

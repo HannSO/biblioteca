@@ -9,7 +9,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.*;
 
 /**
  * Created by Robin on 24/09/2016.
@@ -22,9 +21,8 @@ public class BookTest {
 
     @Before
     public void beforeEach(){
-        book = new Book();
-        book.setAuthor("Dickens");
         dateString = "12/07/1860";
+        book = new Book("Dickens",dateString,"Oliver Twist");
         DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
         try {
             date = df.parse(dateString);
@@ -32,10 +30,6 @@ public class BookTest {
         catch (ParseException e) {
             e.printStackTrace();
         }
-
-        book.setDatePublished("12/07/1860");
-        book.setTitle("Oliver Twist");
-
     }
 
     @Test
