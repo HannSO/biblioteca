@@ -4,16 +4,28 @@ package com.biblioteca;
  */
 public class BibliotecaApp {
     private Message message;
-    private Bookshelf bookshelf;
+    public Bookshelf bookshelf;
     private static Book book;
     private static Book bookTwo;
+    private static OptionSelector optionSelector;
+    private static UserInput userInput;
+    private static String myInput;
+    private static Integer myInputAsInteger;
 
     public static void main(String [] args) {
         Message message = new Message();
         message.print();
         Bookshelf bookshelf = new Bookshelf();
         loadBooks(bookshelf);
-        bookshelf.printBookInfoInColumns();
+//        bookshelf.printBookInfoInColumns();
+        optionSelector = new OptionSelector();
+        userInput = new UserInput();
+        myInput = userInput.returnString();
+        myInputAsInteger = Integer.parseInt(myInput);
+        optionSelector.select(myInputAsInteger, bookshelf);
+
+
+
 
     }
 
