@@ -7,14 +7,13 @@ import java.util.ArrayList;
  */
 class Bookshelf {
 	public ArrayList<Book> books = new ArrayList();
-    public ArrayList<Book> checkedInbooks = new ArrayList();
+    private ArrayList<Book> checkedInBooks;
 
 
 	public void printCheckedInBookInfo() {
-		for (int i = 0; i < books.size(); i++) {
-			if (books.get(i).isCheckedIn()) {
+	    checkedInBooks = ListCheckedInBooks();
+		for (int i = 0; i < checkedInBooks.size(); i++) {
                 System.out.printf("%-30s %-30s %-30s %n", books.get(i).getAuthor(), books.get(i).getTitle(), books.get(i).getDatePublishedString());
-            }
 		}
 	}
 	public void addBooks(Book book) {books.add(book);}
@@ -30,6 +29,15 @@ class Bookshelf {
 
     }
 
+    private ArrayList<Book> ListCheckedInBooks(){
+        checkedInBooks = new ArrayList();
+        for (int i = 0; i <books.size(); i++){
+            if (books.get(i).isCheckedIn()){
+                checkedInBooks.add(books.get(i));
+            }
+        }
+        return checkedInBooks;
+    }
 
 }
 
