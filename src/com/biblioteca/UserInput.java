@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 
 public class UserInput {
 
-    public static String PROMPT = "Enter: \n";
+    public static String PROMPT = "Enter selection: \n";
 
     public String returnString() {
         String inputLine = null;

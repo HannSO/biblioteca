@@ -11,13 +11,16 @@ public class BibliotecaApp {
     private static UserInput userInput;
     private static String myInput;
     private static Integer myInputAsInteger;
+    private static Menu menu;
 
     public static void main(String [] args) {
+        menu = new Menu();
+        menu.addMenuItem(1, "Display books");
         Message message = new Message();
         message.print();
         Bookshelf bookshelf = new Bookshelf();
         loadBooks(bookshelf);
-//        bookshelf.printBookInfoInColumns();
+        menu.displayOptions();
         optionSelector = new OptionSelector();
         userInput = new UserInput();
         myInput = userInput.returnString();

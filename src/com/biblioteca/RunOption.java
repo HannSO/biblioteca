@@ -5,7 +5,5 @@ package com.biblioteca;
  */
 public class RunOption {
 
-        void run() {
-                System.out.print("In Run option run");
-        };
+        void run() {}
 }
