@@ -10,22 +10,21 @@ public class OptionSelector{
 
 
     public void optionOne(Bookshelf bookshelf){
+        System.out.print("Here are the books available: \n");
         bookshelf.printBookInfoInColumns();
     }
 
 
     public void select(Integer input, Bookshelf bookshelf) {
-        RunOption commandOne = new RunOption() {@Override public void run() { optionOne( bookshelf); } };
+        RunOption commandOne = new RunOption() {@Override public void run() { optionOne(bookshelf); } };
         Map<Integer, RunOption> methodMap = new HashMap<>();
         methodMap.put(1, commandOne);
-
         try {
             RunOption option = methodMap.get(input);
             option.run();
         } catch (NullPointerException e){
             System.out.print("Invalid menu option. Please select again.");
         }
-
     }
 }
 

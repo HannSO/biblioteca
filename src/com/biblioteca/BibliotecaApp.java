@@ -13,21 +13,30 @@ public class BibliotecaApp {
     private static Menu menu;
 
     public static void main(String [] args) {
-        menu = new Menu();
-        menu.addMenuItem(1, "Display books");
-        Message message = new Message();
-        message.print();
+        createMenu();
         Bookshelf bookshelf = new Bookshelf();
         loadBooks(bookshelf);
+        Message message = new Message();
+        message.print();
+        showAndExecuteMenu(bookshelf);
+    }
+
+    public static void createMenu(){
+        menu = new Menu();
+        menu.addMenuItem(1, "Display books");
+        menu.addMenuItem(99, "Quit");
+    }
+
+    public static void showAndExecuteMenu(Bookshelf bookshelf){
         menu.displayOptions();
         optionSelector = new OptionSelector();
         userInput = new UserInput();
         integerInput = userInput.returnInteger();
-        optionSelector.select(integerInput, bookshelf);
-
-
-
-
+        while (integerInput != 99) {
+            optionSelector.select(integerInput, bookshelf);
+            integerInput = userInput.returnInteger();
+        }
+        System.out.print("You have quit menu.");
     }
 
     private static void loadBooks(Bookshelf shelf) {
@@ -35,6 +44,5 @@ public class BibliotecaApp {
         book = new Book("Voltaire","1/1/1760", "Candid");
         shelf.addBooks(bookTwo);
         shelf.addBooks(book);
-
     }
 }
