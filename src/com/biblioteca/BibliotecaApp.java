@@ -9,8 +9,7 @@ public class BibliotecaApp {
     private static Book bookTwo;
     private static OptionSelector optionSelector;
     private static UserInput userInput;
-    private static String myInput;
-    private static Integer myInputAsInteger;
+    private static Integer integerInput;
     private static Menu menu;
 
     public static void main(String [] args) {
@@ -23,9 +22,8 @@ public class BibliotecaApp {
         menu.displayOptions();
         optionSelector = new OptionSelector();
         userInput = new UserInput();
-        myInput = userInput.returnString();
-        myInputAsInteger = Integer.parseInt(myInput);
-        optionSelector.select(myInputAsInteger, bookshelf);
+        integerInput = userInput.returnInteger();
+        optionSelector.select(integerInput, bookshelf);
 
 
 

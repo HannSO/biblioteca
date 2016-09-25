@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 
 public class UserInput {
 
-    public static String PROMPT = "Enter selection: \n";
+    public static String PROMPT = "Enter selection: ";
 
     public String returnString() {
         String inputLine = null;
@@ -25,5 +25,15 @@ public class UserInput {
             System.out.println("IOException:" + e);
         }
         return inputLine;
+    }
+
+    public Integer returnInteger(){
+        String string = returnString();
+        try {
+            return Integer.parseInt(string);
+        } catch (NumberFormatException e){
+            System.out.print("Selection must be an integer. Please select again.");
+            return 0;
+        }
     }
 }

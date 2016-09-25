@@ -16,11 +16,16 @@ public class OptionSelector{
 
     public void select(Integer input, Bookshelf bookshelf) {
         RunOption commandOne = new RunOption() {@Override public void run() { optionOne( bookshelf); } };
-
         Map<Integer, RunOption> methodMap = new HashMap<>();
         methodMap.put(1, commandOne);
-        RunOption option = methodMap.get(input);
-        option.run();
+
+        try {
+            RunOption option = methodMap.get(input);
+            option.run();
+        } catch (NullPointerException e){
+            System.out.print("Invalid menu option. Please select again.");
+        }
+
     }
 }
 
