@@ -33,6 +33,19 @@ public class BookTest {
     }
 
     @Test
+    public void checkOutchangesCheckedInStatusToFalse(){
+        book.checkOut();
+        assertEquals(false, book.isCheckedIn());
+    }
+    @Test
+    public void checkInchangesCheckInStatusToFalse(){
+        book.checkOut();
+        book.checkIn();
+        assertEquals(true, book.isCheckedIn());
+    }
+    @Test
+    public void isCheckedInOnInitialization(){assertEquals(true,book.isCheckedIn());}
+    @Test
     public void getsTitle(){assertEquals("Oliver Twist", book.getTitle());}
     @Test
     public void getsAuthor(){assertEquals("Dickens", book.getAuthor());}

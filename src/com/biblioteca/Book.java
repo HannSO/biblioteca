@@ -10,30 +10,33 @@ import java.util.Date;
  */
 public class Book {
 
-
-
-   private  String author;
-
+    private  String author;
     private Date datePublished;
-
     private String title;
-
     private String stringDatePublished;
+    private Boolean CheckedIn;
 
     public Book (String bookAuthor, String bookDate, String bookTitle){
         author = bookAuthor;
         setDatePublished(bookDate);
         title = bookTitle;
+        CheckedIn = true;
     }
 
+    public boolean isCheckedIn(){
+        return CheckedIn;
+    }
 
+    public void checkIn(){
+        CheckedIn = true;
+    }
+
+    public void checkOut() {
+        CheckedIn = false;
+    }
 
     public String getAuthor(){
         return author;
-    }
-
-    public void setTitle(String name){
-        title = name;
     }
 
    public Date getDatePublished(){
@@ -43,8 +46,6 @@ public class Book {
    public String getTitle(){
         return title;
     }
-
-
 
    public void setDatePublished(String stringDate){
 
@@ -56,13 +57,10 @@ public class Book {
            e.printStackTrace();
        }
        stringDatePublished = stringDate;
-
    }
 
    public String getDatePublishedString(){
        return stringDatePublished;
    }
-
-
 }
 
