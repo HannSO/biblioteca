@@ -19,8 +19,8 @@ public class BookshelfTest {
 
     private Bookshelf bookshelf;
     private ByteArrayOutputStream outputStream;
-    private Book book;
-    private Book bookTwo;
+    private Book checkedInBook;
+    private Book checkedOutBook;
 
     @Before
     public void beforeEach(){
@@ -28,36 +28,50 @@ public class BookshelfTest {
         PrintStream printStream = new PrintStream(outputStream);
         System.setOut(printStream);
         bookshelf = new Bookshelf();
-        book  = mock(Book.class);
-        bookTwo = mock(Book.class);
-        when(book.isCheckedIn()).thenReturn(true);
-        when(bookTwo.isCheckedIn()).thenReturn(false);
+        checkedInBook  = mock(Book.class);
+        checkedOutBook = mock(Book.class);
+        when(checkedInBook.isCheckedIn()).thenReturn(true);
+        when(checkedOutBook.isCheckedIn()).thenReturn(false);
     }
 
     @Test
     public void AddsBooks(){
-        bookshelf.addBooks(book);
-        assertEquals(book, bookshelf.books.get(0));
+        bookshelf.addBooks(checkedInBook);
+        assertEquals(checkedInBook, bookshelf.books.get(0));
+    }
+
+    @Test
+    public void ChecksInBooksWithSuccessMessage(){
+        bookshelf.addBooks(checkedOutBook);
+        bookshelf.checkIn(checkedOutBook);
+        assertEquals("Thank you for returning the book\n",outputStream.toString());
+    }
+
+    @Test
+    public void ChecksOutBookWithSuccessMessage(){
+        bookshelf.addBooks(checkedInBook);
+        bookshelf.checkOut(checkedInBook);
+        assertEquals("Thank you! Enjoy the book\n",outputStream.toString());
     }
 
     @Test
     public void GetsBooks(){
         ArrayList<Book> booksOnShelf;
-        bookshelf.addBooks(book);
+        bookshelf.addBooks(checkedInBook);
         booksOnShelf = bookshelf.books;
-        assertEquals(book, booksOnShelf.get(0));
+        assertEquals(checkedInBook, booksOnShelf.get(0));
     }
 
     @Test
     public void printsBooksWithInfoAsColumns(){
-        bookshelf.addBooks(book);
-        bookshelf.addBooks(bookTwo);
-        when(book.getAuthor()).thenReturn("Dickens");
-        when(book.getDatePublishedString()).thenReturn("12/07/1860");
-        when(book.getTitle()).thenReturn("Oliver Twist");
-        when(bookTwo.getAuthor()).thenReturn("Dickens");
-        when(bookTwo.getDatePublishedString()).thenReturn("11/07/1860");
-        when(bookTwo.getTitle()).thenReturn("The Tale of Two Cities");
+        bookshelf.addBooks(checkedInBook);
+        bookshelf.addBooks(checkedOutBook);
+        when(checkedInBook.getAuthor()).thenReturn("Dickens");
+        when(checkedInBook.getDatePublishedString()).thenReturn("12/07/1860");
+        when(checkedInBook.getTitle()).thenReturn("Oliver Twist");
+        when(checkedOutBook.getAuthor()).thenReturn("Dickens");
+        when(checkedOutBook.getDatePublishedString()).thenReturn("11/07/1860");
+        when(checkedOutBook.getTitle()).thenReturn("The Tale of Two Cities");
         bookshelf.printCheckedInBookInfo();
         assertEquals("Dickens                        Oliver Twist                   12/07/1860                     \n", outputStream.toString());
 

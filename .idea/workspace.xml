@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02d36ed2-8e7d-41f5-9968-37ac73d45885" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java" afterPath="$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/biblioteca/OptionSelector.java" afterPath="$PROJECT_DIR$/src/com/biblioteca/OptionSelector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java" afterPath="$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/biblioteca/OptionSelectorTest.java" afterPath="$PROJECT_DIR$/test/com/biblioteca/OptionSelectorTest.java" />
     </list>
     <ignored path="biblioteca.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,8 +38,8 @@
           <file leaf-file-name="BookshelfTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+                <state relative-caret-position="215">
+                  <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="49" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -188,8 +186,8 @@
           <file leaf-file-name="Bookshelf.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+                <state relative-caret-position="260">
+                  <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -268,10 +266,10 @@
         <option value="$PROJECT_DIR$/src/com/biblioteca/BibliotecaApp.java" />
         <option value="$PROJECT_DIR$/src/com/biblioteca/Book.java" />
         <option value="$PROJECT_DIR$/test/com/biblioteca/BookTest.java" />
-        <option value="$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java" />
         <option value="$PROJECT_DIR$/src/com/biblioteca/OptionSelector.java" />
         <option value="$PROJECT_DIR$/test/com/biblioteca/OptionSelectorTest.java" />
         <option value="$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java" />
+        <option value="$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java" />
       </list>
     </option>
   </component>
@@ -919,20 +917,11 @@
       <updated>1474379086509</updated>
       <workItem from="1474379090812" duration="8698000" />
       <workItem from="1474557511414" duration="53524000" />
-      <workItem from="1474810979627" duration="13127000" />
+      <workItem from="1474810979627" duration="14596000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BookTest - 2016.09.25 at 19h 30m 58s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest - 2016.09.25 at 19h 37m 45s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookTest - 2016.09.25 at 19h 38m 58s.xml">
-      <configuration name="BookTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BookTest - 2016.09.25 at 19h 39m 36s.xml">
       <configuration name="BookTest" configurationId="JUnit" />
     </history-entry>
@@ -954,9 +943,18 @@
     <history-entry file="BookshelfTest - 2016.09.25 at 19h 53m 28s.xml">
       <configuration name="BookshelfTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BookshelfTest - 2016.09.25 at 20h 11m 29s.xml">
+      <configuration name="BookshelfTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookshelfTest - 2016.09.25 at 20h 12m 33s.xml">
+      <configuration name="BookshelfTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BookshelfTest - 2016.09.25 at 20h 21m 06s.xml">
+      <configuration name="BookshelfTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75349000" />
+    <option name="totallyTimeSpent" value="76818000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1283,8 +1281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/biblioteca/MessageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="465">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1380,21 +1378,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        <state relative-caret-position="215">
+          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>

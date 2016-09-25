@@ -7,6 +7,7 @@ import java.util.ArrayList;
  */
 class Bookshelf {
 	public ArrayList<Book> books = new ArrayList();
+    public ArrayList<Book> checkedInbooks = new ArrayList();
 
 
 	public void printCheckedInBookInfo() {
@@ -18,10 +19,16 @@ class Bookshelf {
 	}
 	public void addBooks(Book book) {books.add(book);}
 
+    public void checkIn(Book book){
+        book.checkIn();
+        System.out.println("Thank you for returning the book");
+    }
 
+    public void checkOut(Book book){
+        book.checkOut();
+       System.out.println("Thank you! Enjoy the book");
 
-
-
+    }
 
 
 }
