@@ -28,7 +28,7 @@ public class OptionSelectorTest {
     @Test
     public void optionOneCallsOnBookShelftoDisplayBooks(){
         selector.optionOne(bookshelf);
-        verify(bookshelf, times(1)).printBookInfoInColumns();
+        verify(bookshelf, times(1)).printCheckedInBookInfo();
     }
 
 

@@ -11,7 +11,7 @@ public class OptionSelector{
 
     public void optionOne(Bookshelf bookshelf){
         System.out.print("Here are the books available: \n");
-        bookshelf.printBookInfoInColumns();
+        bookshelf.printCheckedInBookInfo();
     }
 
 

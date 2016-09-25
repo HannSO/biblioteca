@@ -30,6 +30,8 @@ public class BookshelfTest {
         bookshelf = new Bookshelf();
         book  = mock(Book.class);
         bookTwo = mock(Book.class);
+        when(book.isCheckedIn()).thenReturn(true);
+        when(bookTwo.isCheckedIn()).thenReturn(false);
     }
 
     @Test
@@ -42,7 +44,7 @@ public class BookshelfTest {
     public void GetsBooks(){
         ArrayList<Book> booksOnShelf;
         bookshelf.addBooks(book);
-        booksOnShelf = bookshelf.getBooks();
+        booksOnShelf = bookshelf.books;
         assertEquals(book, booksOnShelf.get(0));
     }
 
@@ -56,9 +58,10 @@ public class BookshelfTest {
         when(bookTwo.getAuthor()).thenReturn("Dickens");
         when(bookTwo.getDatePublishedString()).thenReturn("11/07/1860");
         when(bookTwo.getTitle()).thenReturn("The Tale of Two Cities");
-        bookshelf.printBookInfoInColumns();
-        assertEquals("Dickens                        Oliver Twist                   12/07/1860                     \n" +
-                "Dickens                        The Tale of Two Cities         11/07/1860                     \n", outputStream.toString());
+        bookshelf.printCheckedInBookInfo();
+        assertEquals("Dickens                        Oliver Twist                   12/07/1860                     \n", outputStream.toString());
+
 
     }
+
 }
