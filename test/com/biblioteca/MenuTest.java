@@ -24,7 +24,6 @@ public class MenuTest {
         System.setOut(printStream);
         menu = new Menu();
         menu.addMenuItem(1, "Display Books");
-
     }
 
     @Test

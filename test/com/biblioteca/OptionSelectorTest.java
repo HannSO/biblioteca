@@ -30,7 +30,11 @@ public class OptionSelectorTest {
         selector.optionOne(bookshelf);
         verify(bookshelf, times(1)).printCheckedInBookInfo();
     }
-
+//
+//    @Test
+//    public void optionTwoCallsOnCheckIn(){
+//        s
+//    }
 
 //not sure how to test override?
 }

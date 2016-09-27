@@ -11,11 +11,12 @@ import java.io.InputStreamReader;
 
 public class UserInput {
 
-    public static String PROMPT = "Enter selection: ";
+    public void showPrompt(String prompt) {
+        System.out.print(prompt + "\n");
+    }
 
     public String returnString() {
         String inputLine = null;
-        System.out.print(PROMPT);
         try {
             BufferedReader is = new BufferedReader(
                     new InputStreamReader(System.in));
@@ -32,7 +33,7 @@ public class UserInput {
         try {
             return Integer.parseInt(string);
         } catch (NumberFormatException e){
-            System.out.print("Selection must be an integer. Please select again.");
+            System.out.print("Selection must be an integer. ");
             return 0;
         }
     }

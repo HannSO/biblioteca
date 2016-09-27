@@ -32,10 +32,18 @@ public class BookshelfTest {
         checkedOutBookInitially = mock(Book.class);
         when(checkedInBookInitially.isCheckedIn()).thenReturn(true);
         when(checkedOutBookInitially.isCheckedIn()).thenReturn(false);
+        when(checkedInBookInitially.getTitle()).thenReturn("Candid");
+    }
+    @Test
+    public void getsBookFromShelfFromBookTitle(){
+        System.out.print("boo");
+        bookshelf.addBooks(checkedInBookInitially);
+        System.out.print("hello" + bookshelf.books.size());
+        assertEquals(checkedInBookInitially, bookshelf.retrieveBookFromTitle("Candid"));
     }
 
-    @Test
 
+    @Test
     public void AddsBooks(){
         bookshelf.addBooks(checkedInBookInitially);
         assertEquals(checkedInBookInitially, bookshelf.books.get(0));

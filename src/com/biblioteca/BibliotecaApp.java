@@ -24,19 +24,25 @@ public class BibliotecaApp {
     public static void createMenu(){
         menu = new Menu();
         menu.addMenuItem(1, "Display books");
+        menu.addMenuItem(2, "CheckInBook");
+        menu.addMenuItem(3, "CheckOutBook");
         menu.addMenuItem(99, "Quit");
+
     }
 
     public static void showAndExecuteMenu(Bookshelf bookshelf){
-        menu.displayOptions();
         optionSelector = new OptionSelector();
         userInput = new UserInput();
+        menu.displayOptions();
+        userInput.showPrompt("Enter selection: ");
         integerInput = userInput.returnInteger();
         while (integerInput != 99) {
             optionSelector.select(integerInput, bookshelf);
+            menu.displayOptions();
+            userInput.showPrompt("Enter selection:");
             integerInput = userInput.returnInteger();
         }
-        System.out.print("You have quit menu.");
+        System.out.print("\nYou have quit Biblioteca. Goodbye.\n");
     }
 
     private static void loadBooks(Bookshelf shelf) {

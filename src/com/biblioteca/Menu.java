@@ -14,7 +14,7 @@ public class Menu {
     }
 
     public void displayOptions() {
-        System.out.println(options);
+        System.out.println("\nSelect an option:\n" + options);
     }
 }
 
