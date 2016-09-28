@@ -1,5 +1,7 @@
 package com.biblioteca;
 
+import com.biblioteca.Items.Book;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -44,6 +46,14 @@ public class OptionSelector{
         } catch (NullPointerException e){
             System.out.print("Invalid menu option. Please try again.\n");
         }
+    }
+
+    /**
+     * Created by Robin on 25/09/2016.
+     */
+    public static class RunOption {
+
+            void run() {}
     }
 }
 

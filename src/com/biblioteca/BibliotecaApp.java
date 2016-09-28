@@ -1,4 +1,8 @@
 package com.biblioteca;
+
+import com.biblioteca.Items.Book;
+import com.biblioteca.Shelves.Bookshelf;
+
 /**
  * Created by Robin on 20/09/2016.
  */

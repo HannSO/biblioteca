@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
+
 import static org.mockito.Mockito.*;
 /**
  * Created by Robin on 25/09/2016.
