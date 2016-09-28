@@ -36,9 +36,7 @@ public class BookshelfTest {
     }
     @Test
     public void getsBookFromShelfFromBookTitle(){
-        System.out.print("boo");
         bookshelf.addBooks(checkedInBookInitially);
-        System.out.print("hello" + bookshelf.books.size());
         assertEquals(checkedInBookInitially, bookshelf.retrieveBookFromTitle("Candid"));
     }
 
@@ -53,7 +51,7 @@ public class BookshelfTest {
     public void ChecksInBooksWithSuccessMessage(){
         bookshelf.addBooks(checkedOutBookInitially);
         bookshelf.checkIn(checkedOutBookInitially);
-        assertEquals("Thank you for returning the book\n",outputStream.toString());
+        assertEquals("Thank you for returning the book.\n",outputStream.toString());
         verify(checkedOutBookInitially, times(1)).checkIn();
     }
 
@@ -61,14 +59,15 @@ public class BookshelfTest {
     public void UnsuccessfulCheckOutTellsUser(){
         bookshelf.addBooks(checkedOutBookInitially);
         bookshelf.checkOut(checkedOutBookInitially);
-        assertEquals("That book is not available\n",outputStream.toString());
+        assertEquals("That book is not available.\n",outputStream.toString());
         verify(checkedOutBookInitially, times(0)).checkOut();
     }
 
     @Test
     public void DoesntCheckInBookIfnotOnShelf(){
         bookshelf.checkIn(checkedOutBookInitially);
-        assertEquals("Book not found in library; please check spelling, and submit again\n",outputStream.toString());
+        assertEquals("That is not a valid book to return.\n",outputStream.toString());
+        assertEquals("That is not a valid book to return.\n",outputStream.toString());
         verify(checkedOutBookInitially, times(0)).checkIn();
     }
 
@@ -76,7 +75,7 @@ public class BookshelfTest {
     public void ChecksOutBookWithSuccessMessage(){
         bookshelf.addBooks(checkedInBookInitially);
         bookshelf.checkOut(checkedInBookInitially);
-        assertEquals("Thank you! Enjoy the book\n",outputStream.toString());
+        assertEquals("Thank you! Enjoy the book.\n",outputStream.toString());
         verify(checkedInBookInitially, times(1)).checkOut();
     }
 
@@ -99,7 +98,7 @@ public class BookshelfTest {
         when(checkedOutBookInitially.getDatePublishedString()).thenReturn("11/07/1860");
         when(checkedOutBookInitially.getTitle()).thenReturn("The Tale of Two Cities");
         bookshelf.printCheckedInBookInfo();
-        assertEquals("Dickens                        Oliver Twist                   12/07/1860                     \n", outputStream.toString());
+        assertEquals("AUTHOR                         TITLE                          PUBLICATION DATE               \nDickens                        Oliver Twist                   12/07/1860                     \n", outputStream.toString());
 
 
     }
