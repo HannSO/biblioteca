@@ -14,25 +14,26 @@ public class Book {
     private Date datePublished;
     private String title;
     private String stringDatePublished;
-    private Boolean CheckedIn;
+    private Boolean checkedIn;
+
 
     public Book (String bookAuthor, String bookDate, String bookTitle){
         author = bookAuthor;
         setDatePublished(bookDate);
         title = bookTitle;
-        CheckedIn = true;
+        checkedIn= true;
     }
 
     public boolean isCheckedIn(){
-        return CheckedIn;
+        return checkedIn;
     }
 
     public void checkIn(){
-        CheckedIn = true;
+        checkedIn = true;
     }
 
     public void checkOut() {
-        CheckedIn = false;
+        checkedIn = false;
     }
 
     public String getAuthor(){

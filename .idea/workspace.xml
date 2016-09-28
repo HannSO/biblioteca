@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02d36ed2-8e7d-41f5-9968-37ac73d45885" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/biblioteca/Film.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/biblioteca/FilmTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/biblioteca/com/biblioteca/Book.class" afterPath="$PROJECT_DIR$/out/production/biblioteca/com/biblioteca/Book.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/biblioteca/com/biblioteca/BookshelfTest.class" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/biblioteca/BookshelfTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/biblioteca/com/biblioteca/MenuTest.class" afterPath="$PROJECT_DIR$/out/test/biblioteca/com/biblioteca/MenuTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/biblioteca/Book.java" afterPath="$PROJECT_DIR$/src/com/biblioteca/Book.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java" afterPath="$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/biblioteca/MenuTest.java" afterPath="$PROJECT_DIR$/test/com/biblioteca/MenuTest.java" />
     </list>
     <ignored path="biblioteca.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,16 +39,25 @@
     <favorites_list name="biblioteca" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5865522">
+    <splitter split-orientation="horizontal" split-proportion="0.38965088">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="BookshelfTest.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BookshelfTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="732">
-                  <caret line="100" column="117" selection-start-line="100" selection-start-column="117" selection-end-line="100" selection-end-column="117" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="method#beforeEach#0;class#BookshelfTest#0" expanded="false" />
+                    <element signature="method#getsBookFromShelfFromBookTitle#0;class#BookshelfTest#0" expanded="false" />
+                    <element signature="method#AddsBooks#0;class#BookshelfTest#0" expanded="false" />
+                    <element signature="method#ChecksInBooksWithSuccessMessage#0;class#BookshelfTest#0" expanded="false" />
+                    <element signature="method#UnsuccessfulCheckOutTellsUser#0;class#BookshelfTest#0" expanded="false" />
+                    <element signature="method#DoesntCheckInBookIfnotOnShelf#0;class#BookshelfTest#0" expanded="false" />
+                    <element signature="method#ChecksOutBookWithSuccessMessage#0;class#BookshelfTest#0" expanded="false" />
+                    <element signature="method#GetsBooks#0;class#BookshelfTest#0" expanded="false" />
+                    <element signature="method#printsBooksWithInfoAsColumns#0;class#BookshelfTest#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -111,25 +128,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Message.java">
+          <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Book.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+                <state relative-caret-position="345">
+                  <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
                   <folding>
-                    <element signature="e#116#117#0" expanded="true" />
-                    <element signature="e#176#177#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="UserInputTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/com/biblioteca/UserInputTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -137,8 +143,20 @@
           <file leaf-file-name="MessageTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/com/biblioteca/MessageTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="35" />
+                <state relative-caret-position="390">
+                  <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FilmTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/com/biblioteca/FilmTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="282">
+                  <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -149,9 +167,13 @@
           <file leaf-file-name="BookTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/com/biblioteca/BookTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="645">
-                  <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-                  <folding />
+                <state relative-caret-position="690">
+                  <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="54" selection-end-column="96" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="method#checkOutchangesCheckedInStatusToFalse#0;class#BookTest#0" expanded="false" />
+                    <element signature="method#checkInchangesCheckInStatusToFalse#0;class#BookTest#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -160,20 +182,10 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="BibliotecaApp.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/biblioteca/BibliotecaApp.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="782">
-                  <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="MessageTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/com/biblioteca/MessageTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="397">
+                <state relative-caret-position="465">
                   <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -185,20 +197,28 @@
           <file leaf-file-name="MenuTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/com/biblioteca/MenuTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="307">
-                  <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="90">
+                  <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Bookshelf.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BibliotecaApp.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/com/biblioteca/BibliotecaApp.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="782">
+                  <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Bookshelf.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="375">
-                  <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="67" />
+                  <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="docComment;class#Bookshelf#0" expanded="false" />
@@ -207,13 +227,27 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Book.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Book.java">
+          <file leaf-file-name="Film.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Film.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="585">
-                  <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+                <state relative-caret-position="900">
+                  <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
                   <folding>
                     <element signature="imports" expanded="true" />
+                    <element signature="e#745#746#0" expanded="true" />
+                    <element signature="e#777#778#0" expanded="true" />
+                    <element signature="e#806#807#0" expanded="true" />
+                    <element signature="e#838#839#0" expanded="true" />
+                    <element signature="e#868#869#0" expanded="true" />
+                    <element signature="e#901#902#0" expanded="true" />
+                    <element signature="e#936#937#0" expanded="true" />
+                    <element signature="e#967#968#0" expanded="true" />
+                    <element signature="e#1268#1269#0" expanded="true" />
+                    <element signature="e#1303#1304#0" expanded="true" />
+                    <element signature="e#1349#1350#0" expanded="true" />
+                    <element signature="e#1390#1391#0" expanded="true" />
+                    <element signature="e#1424#1425#0" expanded="true" />
+                    <element signature="e#1453#1454#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -267,10 +301,8 @@
         <option value="$PROJECT_DIR$/src/com/biblioteca/asdfadf.java" />
         <option value="$PROJECT_DIR$/src/com/biblioteca/RunOption.java" />
         <option value="$PROJECT_DIR$/test/com/biblioteca/MessageTest.java" />
-        <option value="$PROJECT_DIR$/src/com/biblioteca/Book.java" />
         <option value="$PROJECT_DIR$/test/com/biblioteca/BookTest.java" />
         <option value="$PROJECT_DIR$/test/com/biblioteca/OptionSelectorTest.java" />
-        <option value="$PROJECT_DIR$/test/com/biblioteca/MenuTest.java" />
         <option value="$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class" />
         <option value="$PROJECT_DIR$/src/com/biblioteca/Message.java" />
         <option value="$PROJECT_DIR$/src/com/biblioteca/Menu.java" />
@@ -278,7 +310,11 @@
         <option value="$PROJECT_DIR$/src/com/biblioteca/UserInput.java" />
         <option value="$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java" />
         <option value="$PROJECT_DIR$/src/com/biblioteca/OptionSelector.java" />
+        <option value="$PROJECT_DIR$/test/com/biblioteca/MenuTest.java" />
         <option value="$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java" />
+        <option value="$PROJECT_DIR$/src/com/biblioteca/Book.java" />
+        <option value="$PROJECT_DIR$/src/com/biblioteca/Film.java" />
+        <option value="$PROJECT_DIR$/test/com/biblioteca/FilmTest.java" />
       </list>
     </option>
   </component>
@@ -296,7 +332,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1285" />
+    <option name="x" value="-255" />
     <option name="y" value="-1200" />
     <option name="width" value="1920" />
     <option name="height" value="1200" />
@@ -328,7 +364,60 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
-        <subPane />
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblioteca" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
@@ -357,7 +446,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BookshelfTest">
+  <component name="RunManager" selected="JUnit.FilmTest">
     <configuration default="false" name="BibliotecaApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -391,32 +480,6 @@
       <option name="PACKAGE_NAME" value="com.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.biblioteca.BookshelfTest" />
       <option name="METHOD_NAME" value="getsBookfromShelffromBookTitle" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BookshelfTest.AddsBooks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.biblioteca.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="biblioteca" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.biblioteca" />
-      <option name="MAIN_CLASS_NAME" value="com.biblioteca.BookshelfTest" />
-      <option name="METHOD_NAME" value="AddsBooks" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -468,6 +531,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.biblioteca" />
       <option name="MAIN_CLASS_NAME" value="com.biblioteca.BookshelfTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FilmTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.biblioteca.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="biblioteca" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.biblioteca" />
+      <option name="MAIN_CLASS_NAME" value="com.biblioteca.FilmTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -899,17 +988,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.BibliotecaApp" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.BookshelfTest.getsBookfromShelffromBookTitle" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BookshelfTest.AddsBooks" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BookshelfTest.getsBookFromShelfFromBookTitle" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.BookshelfTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BookshelfTest.getsBookFromShelfFromBookTitle" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BookshelfTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FilmTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.BookshelfTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BookshelfTest.getsBookFromShelfFromBookTitle" />
-        <item index="2" class="java.lang.String" itemvalue="Application.BibliotecaApp" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BookshelfTest.getsBookfromShelffromBookTitle" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BookshelfTest.AddsBooks" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FilmTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.BibliotecaApp" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.BookshelfTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.BookshelfTest.getsBookFromShelfFromBookTitle" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BookshelfTest.getsBookfromShelffromBookTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -929,7 +1018,7 @@
       <workItem from="1474379090812" duration="8698000" />
       <workItem from="1474557511414" duration="53524000" />
       <workItem from="1474810979627" duration="15155000" />
-      <workItem from="1474832114307" duration="23345000" />
+      <workItem from="1474832114307" duration="27480000" />
     </task>
     <servers />
   </component>
@@ -946,15 +1035,6 @@
     <history-entry file="BookshelfTest - 2016.09.28 at 15h 03m 45s.xml">
       <configuration name="BookshelfTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BookshelfTest_getsBookFromShelfFromBookTitle - 2016.09.26 at 14h 22m 24s.xml">
-      <configuration name="BookshelfTest.getsBookFromShelfFromBookTitle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookshelfTest_getsBookFromShelfFromBookTitle - 2016.09.26 at 14h 35m 32s.xml">
-      <configuration name="BookshelfTest.getsBookFromShelfFromBookTitle" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BookshelfTest_getsBookFromShelfFromBookTitle - 2016.09.26 at 17h 24m 35s.xml">
-      <configuration name="BookshelfTest.getsBookFromShelfFromBookTitle" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BookshelfTest_getsBookFromShelfFromBookTitle - 2016.09.26 at 17h 26m 03s.xml">
       <configuration name="BookshelfTest.getsBookFromShelfFromBookTitle" configurationId="JUnit" />
     </history-entry>
@@ -964,9 +1044,18 @@
     <history-entry file="BookshelfTest_getsBookFromShelfFromBookTitle - 2016.09.28 at 14h 54m 11s.xml">
       <configuration name="BookshelfTest.getsBookFromShelfFromBookTitle" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FilmTest - 2016.09.28 at 16h 11m 19s.xml">
+      <configuration name="FilmTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FilmTest - 2016.09.28 at 16h 11m 38s.xml">
+      <configuration name="FilmTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FilmTest - 2016.09.28 at 16h 14m 52s.xml">
+      <configuration name="FilmTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100722000" />
+    <option name="totallyTimeSpent" value="104857000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -978,22 +1067,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1285" y="-1200" width="1920" height="1200" extended-state="0" />
+    <frame x="-255" y="-1200" width="1920" height="1200" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13846155" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13768116" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14039855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14039855" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33830845" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06866953" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.020234292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21387696" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1048,7 +1137,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/com/biblioteca/FilmTest.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1057,30 +1154,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/biblioteca/RunOption.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/biblioteca/OptionSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="42" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1177#1248#0" expanded="true" />
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1281#1352#0" expanded="true" />
-            <element signature="e#1351#1352#0" expanded="true" />
-            <element signature="e#1387#1459#0" expanded="true" />
-            <element signature="e#1458#1459#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/biblioteca/UserInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1116,7 +1189,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkOutchangesCheckedInStatusToFalse#0;class#BookTest#0" expanded="false" />
+            <element signature="method#checkInchangesCheckInStatusToFalse#0;class#BookTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1142,9 +1219,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,6 +1260,15 @@
           <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#beforeEach#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#getsBookFromShelfFromBookTitle#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#AddsBooks#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#ChecksInBooksWithSuccessMessage#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#UnsuccessfulCheckOutTellsUser#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#DoesntCheckInBookIfnotOnShelf#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#ChecksOutBookWithSuccessMessage#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#GetsBooks#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#printsBooksWithInfoAsColumns#0;class#BookshelfTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1249,7 +1333,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkOutchangesCheckedInStatusToFalse#0;class#BookTest#0" expanded="false" />
+            <element signature="method#checkInchangesCheckInStatusToFalse#0;class#BookTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1286,9 +1374,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1325,7 +1411,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkOutchangesCheckedInStatusToFalse#0;class#BookTest#0" expanded="false" />
+            <element signature="method#checkInchangesCheckInStatusToFalse#0;class#BookTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1372,14 +1462,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Parser.java" />
     <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Interface.java" />
     <entry file="file://$PROJECT_DIR$/test/com/biblioteca/ParserTest.java" />
-    <entry file="file://$PROJECT_DIR$/test/com/biblioteca/BookTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="47" selection-start-line="43" selection-start-column="47" selection-end-line="43" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/com/biblioteca/UserInputTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1392,16 +1474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="2" selection-end-line="36" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1427,26 +1499,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#232#233#0" expanded="true" />
             <element signature="e#279#280#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/biblioteca/MenuTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/biblioteca/MessageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1494,10 +1546,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/biblioteca/BibliotecaApp.java">
+    <entry file="file://$PROJECT_DIR$/test/com/biblioteca/MenuTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1505,7 +1557,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Bookshelf.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="67" />
+          <caret line="31" column="36" selection-start-line="31" selection-start-column="36" selection-end-line="31" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#Bookshelf#0" expanded="false" />
@@ -1515,10 +1567,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/com/biblioteca/BookshelfTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="100" column="117" selection-start-line="100" selection-start-column="117" selection-end-line="100" selection-end-column="117" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#beforeEach#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#getsBookFromShelfFromBookTitle#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#AddsBooks#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#ChecksInBooksWithSuccessMessage#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#UnsuccessfulCheckOutTellsUser#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#DoesntCheckInBookIfnotOnShelf#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#ChecksOutBookWithSuccessMessage#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#GetsBooks#0;class#BookshelfTest#0" expanded="false" />
+            <element signature="method#printsBooksWithInfoAsColumns#0;class#BookshelfTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/biblioteca/BookTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="53" column="4" selection-start-line="53" selection-start-column="4" selection-end-line="54" selection-end-column="96" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkOutchangesCheckedInStatusToFalse#0;class#BookTest#0" expanded="false" />
+            <element signature="method#checkInchangesCheckInStatusToFalse#0;class#BookTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/biblioteca/BibliotecaApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/biblioteca/MessageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/biblioteca/FilmTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/biblioteca/Film.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="34" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#745#746#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#806#807#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#868#869#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1303#1304#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
           </folding>
         </state>
       </provider>
