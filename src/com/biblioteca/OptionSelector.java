@@ -3,6 +3,7 @@ package com.biblioteca;
 import com.biblioteca.Shelves.Bookshelf;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Robin on 25/09/2016.
@@ -12,7 +13,7 @@ public class OptionSelector{
 
     public void optionOne(Bookshelf bookshelf){
         System.out.print("\nHere are the books available: \n");
-        bookshelf.printCheckedInItemInfo();
+        bookshelf.printCheckedInItemsInfo();
     }
     public void optionTwo(Bookshelf bookshelf) {
         UserInput userInput = new UserInput();

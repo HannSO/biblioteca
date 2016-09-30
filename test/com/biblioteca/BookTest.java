@@ -4,9 +4,7 @@ import com.biblioteca.Items.Book;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.text.DateFormat;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
@@ -17,20 +15,14 @@ import static org.junit.Assert.assertEquals;
 public class BookTest {
 
     private Book book;
-    private String dateString;
+
     private Date date;
+    private Parser parser = new Parser();
 
     @Before
-    public void beforeEach(){
-        dateString = "12/07/1860";
-        book = new Book("Dickens",dateString,"Oliver Twist");
-        DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-        try {
-            date = df.parse(dateString);
-        }
-        catch (ParseException e) {
-            e.printStackTrace();
-        }
+    public void beforeEach() throws ParseException {
+        date = parser.stringToDate("12/07/1890");
+        book = new Book("Dickens",date,"Oliver Twist");
     }
 
     @Test

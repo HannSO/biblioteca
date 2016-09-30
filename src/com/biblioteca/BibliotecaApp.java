@@ -19,7 +19,7 @@ public class BibliotecaApp {
     private static Integer integerInput;
     private static Menu menu;
     private static Parser parser = new Parser();
-    public static void main(String [] args) {
+    public static void main(String [] args) throws ParseException {
         createMenu();
         Bookshelf bookshelf = new Bookshelf();
         loadBooks(bookshelf);

@@ -1,6 +1,5 @@
 package com.biblioteca.Shelves;
 
-import com.biblioteca.Items.Book;
 import com.biblioteca.Items.Item;
 
 import java.util.ArrayList;
@@ -11,7 +10,7 @@ import java.util.Objects;
  */
 public class Shelf {
     public ArrayList<Item> items = new ArrayList();
-    public ArrayList<Item> checkedInItems = new ArrayList();
+    public ArrayList<Item> checkedInItems;
     public ShelfMessagePrinter message;
 
     public Shelf(){
@@ -19,14 +18,14 @@ public class Shelf {
     }
 
     public void addBooks(Item item) {items.add(item);}
-
-    public void updateCheckedInItems(){
-        for (int i = 0; i items.size(); i++){
-            if (items.get(i).isCheckedIn()){
-                checkedInItems.add(items.get(i));
-            }
-        }
-    }
+//
+//    public void updateCheckedInItems(){
+//        for (int i = 0; i items.size(); i++){
+//            if (items.get(i).isCheckedIn()){
+//                checkedInItems.add(items.get(i));
+//            }
+//        }
+//    }
 
     public void addItem(Item item) {items.add(item);}
 
@@ -42,8 +41,7 @@ public class Shelf {
         message.printUnavailable();
     }
 
-
-    public void printCheckedInItemInfo() {
+    public void printCheckedInItemsInfo() {
         checkedInItems = listCheckedInItems();
         System.out.printf("%-30s %-30s %-30s %n","AUTHOR","TITLE","PUBLICATION DATE");
         for (int i = 0; i < checkedInItems.size(); i++) {
