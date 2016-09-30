@@ -6,7 +6,12 @@ package com.biblioteca.Shelves;
 public class Bookshelf extends Shelf{
 
 
+    public Bookshelf(ShelfMessagePrinter m) {
+        super(m);
+    }
 
+    public Bookshelf() {
 
+    }
 }
 

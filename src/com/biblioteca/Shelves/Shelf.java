@@ -13,7 +13,12 @@ public class Shelf {
     public ArrayList<Item> checkedInItems;
     public ShelfMessagePrinter message;
 
-    public Shelf() {
+
+    public Shelf(ShelfMessagePrinter m) {
+        message = m;
+    }
+
+    public Shelf(){
         message = new ShelfMessagePrinter();
     }
 
@@ -25,16 +30,16 @@ public class Shelf {
         Item item = identifyItemFromTitle(string);
         if (item != null) {
             item.checkIn();
-            message.printCheckinSuccess();
+            message.printCheckInSuccess();
         } else {
             message.printInvalidReturn();
         }
     }
 
+    // THIS METHOD IS WRONG BECAUSE: COPY AND PASTED FROM CHECK IN
     public void checkOut(String string){
         Item thisItem;
         thisItem = identifyItemFromTitle(string);
-
         if (thisItem != null) {
             thisItem.checkOut();
             message.printCheckOutSuccess();}else{

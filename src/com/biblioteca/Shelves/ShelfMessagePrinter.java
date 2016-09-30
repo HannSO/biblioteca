@@ -10,7 +10,7 @@ package com.biblioteca.Shelves;
 
 public class ShelfMessagePrinter {
 
-    public void printCheckinSuccess(){
+    public void printCheckInSuccess(){
         System.out.print("Thank you. Item checked in.");
     };
 
