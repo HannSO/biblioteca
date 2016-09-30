@@ -1,5 +1,7 @@
 package com.biblioteca.Items;
 
+import com.biblioteca.Parser;
+
 import java.util.Date;
 
 /**
@@ -11,6 +13,7 @@ public class Item {
     private Date dateCirculated;
     private String creator;
     private Boolean checkedIn;
+    private Parser parser = new Parser();
 
 
     public Item(String t, Date d, String c) {
@@ -32,7 +35,10 @@ public class Item {
 
     public String getTitle(){return title;}
 
-
+    public String getDateCirculatedString(){
+        Date date = getDateCirculated();
+        return parser.dateToString(date);
+    }
 
 
 }

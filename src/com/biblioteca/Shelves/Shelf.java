@@ -47,7 +47,7 @@ public class Shelf {
         checkedInItems = listCheckedInItems();
         System.out.printf("%-30s %-30s %-30s %n","AUTHOR","TITLE","PUBLICATION DATE");
         for (int i = 0; i < checkedInItems.size(); i++) {
-            System.out.printf("%-30s %-30s %-30s %n", items.get(i).getCreator(), items.get(i).getTitle(), items.get(i).getDatePublishedString());
+            System.out.printf("%-30s %-30s %-30s %n", items.get(i).getCreator(), items.get(i).getTitle(), items.get(i).getDateCirculatedString());
         }
     }
 
@@ -61,6 +61,7 @@ public class Shelf {
         }
         return checkedInItems;
     }
+
 
     private Item identifyItemFromTitle(String bookTitle) {
         Boolean found = false;

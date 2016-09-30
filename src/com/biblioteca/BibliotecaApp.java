@@ -1,7 +1,9 @@
 package com.biblioteca;
 
 import com.biblioteca.Items.Book;
-import com.biblioteca.Shelves;
+import com.biblioteca.Shelves.Bookshelf;
+
+import java.text.ParseException;
 
 
 /**
@@ -16,7 +18,7 @@ public class BibliotecaApp {
     private static UserInput userInput;
     private static Integer integerInput;
     private static Menu menu;
-
+    private static Parser parser = new Parser();
     public static void main(String [] args) {
         createMenu();
         Bookshelf bookshelf = new Bookshelf();
@@ -50,9 +52,9 @@ public class BibliotecaApp {
         System.out.print("\nYou have quit Biblioteca. Goodbye.\n");
     }
 
-    private static void loadBooks(Bookshelf shelf) {
-        bookTwo = new Book("Camus", "1/1/1955", "The Outsider");
-        book = new Book("Voltaire","1/1/1760", "Candid");
+    private static void loadBooks(Bookshelf shelf) throws ParseException {
+        bookTwo = new Book("Camus", parser.stringToDate("01/01/1955"), "The Outsider");
+        book = new Book("Voltaire",parser.stringToDate("1/1/1760"), "Candid");
         shelf.addBooks(bookTwo);
         shelf.addBooks(book);
     }
