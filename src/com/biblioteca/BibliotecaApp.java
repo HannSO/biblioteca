@@ -34,7 +34,6 @@ public class BibliotecaApp {
         menu.addMenuItem(2, "CheckInBook");
         menu.addMenuItem(3, "CheckOutBook");
         menu.addMenuItem(99, "Quit");
-
     }
 
     public static void showAndExecuteMenu(Bookshelf bookshelf){
@@ -52,10 +51,10 @@ public class BibliotecaApp {
         System.out.print("\nYou have quit Biblioteca. Goodbye.\n");
     }
 
-    private static void loadBooks(Bookshelf shelf) throws ParseException {
+    private static void loadBooks(Bookshelf bookshelf) throws ParseException {
         bookTwo = new Book("Camus", parser.stringToDate("01/01/1955"), "The Outsider");
         book = new Book("Voltaire",parser.stringToDate("1/1/1760"), "Candid");
-        shelf.addBooks(bookTwo);
-        shelf.addBooks(book);
+        bookshelf.addItems(bookTwo);
+        bookshelf.addItems(book);
     }
 }

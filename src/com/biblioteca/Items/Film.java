@@ -1,8 +1,5 @@
 package com.biblioteca.Items;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -14,52 +11,60 @@ public class Film {
     private String director;
     private Integer rating;
     private Date dateReleased;
-    private String dateReleasedString;
     private Boolean checkedIn;
 
 
-    public Film(String filmTitle, String filmDirector, String filmDateReleased, Integer filmRating) {
+    public Film(String filmTitle, String filmDirector, Date filmDateReleased, Integer filmRating) {
         title = filmTitle;
         director = filmDirector;
-        dateReleasedString = filmDateReleased;
-        setDateReleased(dateReleasedString);
+        dateReleased = filmDateReleased;
         rating = filmRating;
         checkedIn = true;
     }
 
-    public boolean isCheckedIn() {
-        return checkedIn;
-    }
+//    @Override
+//    public void printCheckedInItemsInfo() {
+//        checkedInItems = listCheckedInItems();
+//        System.out.printf("%-30s %-30s %-30s %n","AUTHOR","TITLE","PUBLICATION DATE");
+//        for (int i = 0; i < checkedInItems.size(); i++) {
+//            System.out.printf("%-30s %-30s %-30s %n", items.get(i).getCreator(), items.get(i).getTitle(), items.get(i).getDateCirculatedString());
+//        }
+//    }
 
-    public void checkIn() {
-        checkedIn = true;
-    }
 
-    public void checkOut() {
-        checkedIn = false;
-    }
-
-    public String getDirector() {
-        return director;
-    }
-
-    public void setDateReleased(String stringDate) {
-        DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-        try {
-
-            dateReleased = df.parse(stringDate);
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public Date getDateReleased() {
-        return dateReleased;
-    }
-
-    public String getReleaseDateAsString() {
-        return dateReleasedString;
-    }
+//    public boolean isCheckedIn() {
+//        return checkedIn;
+//    }
+//
+//    public void checkIn() {
+//        checkedIn = true;
+//    }
+//
+//    public void checkOut() {
+//        checkedIn = false;
+//    }
+//
+//    public String getDirector() {
+//        return director;
+//    }
+//
+//    public void setDateReleased(String stringDate) {
+//        DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
+//        try {
+//
+//            dateReleased = df.parse(stringDate);
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//
+//    public Date getDateReleased() {
+//        return dateReleased;
+//    }
+//
+//    public String getReleaseDateAsString() {
+//        return dateReleasedString;
+//    }
 
     public Integer getRating() {
         return rating;

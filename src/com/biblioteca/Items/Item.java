@@ -27,7 +27,7 @@ public class Item {
 
     public void checkIn(){checkedIn=true;}
 
-    public void checkOut(){checkedIn = false;}
+    public void checkOut(){checkedIn =false;}
 
     public String getCreator(){return creator;}
 

@@ -13,32 +13,33 @@ public class Shelf {
     public ArrayList<Item> checkedInItems;
     public ShelfMessagePrinter message;
 
-    public Shelf(){
+    public Shelf() {
         message = new ShelfMessagePrinter();
     }
 
-    public void addBooks(Item item) {items.add(item);}
-//
-//    public void updateCheckedInItems(){
-//        for (int i = 0; i items.size(); i++){
-//            if (items.get(i).isCheckedIn()){
-//                checkedInItems.add(items.get(i));
-//            }
-//        }
-//    }
+    public void addItems(Item item) {
+        items.add(item);
+    }
 
-    public void addItem(Item item) {items.add(item);}
-
-    public void checkIn(String string){
+    public void checkIn(String string) {
         Item item = identifyItemFromTitle(string);
-        if (item != null){item.checkIn(); message.printCheckinSuccess(); }
-        message.printInvalidReturn();
+        if (item != null) {
+            item.checkIn();
+            message.printCheckinSuccess();
+        } else {
+            message.printInvalidReturn();
+        }
     }
 
     public void checkOut(String string){
-        Item item = identifyItemFromTitle(string);
-        if (item != null){item.checkIn(); message.printCheckinSuccess(); }
-        message.printUnavailable();
+        Item thisItem;
+        thisItem = identifyItemFromTitle(string);
+
+        if (thisItem != null) {
+            thisItem.checkOut();
+            message.printCheckOutSuccess();}else{
+            message.printUnavailable();
+        }
     }
 
     public void printCheckedInItemsInfo() {
@@ -49,23 +50,21 @@ public class Shelf {
         }
     }
 
-
     private ArrayList<Item> listCheckedInItems(){
         checkedInItems = new ArrayList();
         for (int i = 0; i <items.size(); i++){
             if (items.get(i).isCheckedIn()){
-               items.add(items.get(i));
+               checkedInItems.add(items.get(i));
             }
         }
         return checkedInItems;
     }
 
-
     private Item identifyItemFromTitle(String bookTitle) {
         Boolean found = false;
         Integer foundIndex = 0;
         for (int i = 0; i < items.size(); i++) {
-            if (Objects.equals(items.get(i).getTitle(),bookTitle)) {
+            if (Objects.equals(items.get(i).getCreator(),bookTitle)) {
                 found = true;
                 foundIndex = i;
             }
@@ -76,6 +75,8 @@ public class Shelf {
             return null;
         }
     }
+
+
 
 }
 

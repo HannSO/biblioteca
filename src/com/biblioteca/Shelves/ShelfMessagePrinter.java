@@ -22,4 +22,5 @@ public class ShelfMessagePrinter {
         System.out.print("That is not a valid book return.");
     }
 
+    public void printCheckOutSuccess(){System.out.print("Item checked out. Enjoy!");}
 }

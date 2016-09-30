@@ -30,6 +30,7 @@ public class FilmShelfTest {
         when(checkedInItemInitially.isCheckedIn()).thenReturn(true);
         when(checkedOutItemInitially.isCheckedIn()).thenReturn(false);
         when(checkedInItemInitially.getTitle()).thenReturn("Candid");
+        when(checkedOutItemInitially.getTitle()).thenReturn("The Outsider");
     }
 
     //    @Test
@@ -39,13 +40,13 @@ public class FilmShelfTest {
 //    }
     @Test
     public void AddsBooks() {
-        shelf.addBooks(checkedInItemInitially);
+        shelf.addItems(checkedInItemInitially);
         assertEquals(checkedInItemInitially, shelf.items.get(0));
     }
 
     @Test
     public void ChecksInBooksWithSuccessMessage() {
-        shelf.addBooks(checkedOutItemInitially);
+        shelf.addItems(checkedOutItemInitially);
         shelf.checkIn(checkedOutItemInitially.getTitle());
         assertEquals("Thank you for returning the book.\n", outputStream.toString());
         verify(checkedOutItemInitially, times(1)).checkIn();
@@ -53,7 +54,7 @@ public class FilmShelfTest {
 
     @Test
     public void UnsuccessfulCheckOutTellsUser() {
-        shelf.addBooks(checkedOutItemInitially);
+        shelf.addItems(checkedOutItemInitially);
         shelf.checkOut(checkedOutItemInitially.getCreator());
         assertEquals("That book is not available.\n", outputStream.toString());
         verify(checkedOutItemInitially, times(0)).checkOut();
@@ -68,17 +69,18 @@ public class FilmShelfTest {
     }
 
     @Test
-    public void ChecksOutBookWithSuccessMessage() {
-        shelf.addBooks(checkedInItemInitially);
-        shelf.checkOut(checkedInItemInitially.getCreator());
-        assertEquals("Thank you! Enjoy the book.\n", outputStream.toString());
+    public void ChecksOutItemkWithSuccessMessage() {
+        shelf.addItems(checkedInItemInitially);
+        shelf.checkOut("The Outsider");
         verify(checkedInItemInitially, times(1)).checkOut();
+        assertEquals("Thank you! Enjoy the book.\n", outputStream.toString());
+
     }
 
     @Test
     public void GetsBooks() {
         ArrayList<Item> itemsOnShelf;
-        shelf.addBooks(checkedInItemInitially);
+        shelf.addItems(checkedInItemInitially);
         itemsOnShelf = shelf.items;
         assertEquals(checkedInItemInitially, itemsOnShelf.get(0));
     }

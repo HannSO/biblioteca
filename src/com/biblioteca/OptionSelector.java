@@ -12,7 +12,7 @@ public class OptionSelector{
 
 
     public void optionOne(Bookshelf bookshelf){
-        System.out.print("\nHere are the books available: \n");
+//        System.out.print("\nHere are the books available: \n");
         bookshelf.printCheckedInItemsInfo();
     }
     public void optionTwo(Bookshelf bookshelf) {
