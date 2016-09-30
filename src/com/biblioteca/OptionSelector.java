@@ -1,9 +1,8 @@
 package com.biblioteca;
 
-import com.biblioteca.Items.Book;
+import com.biblioteca.Shelves.Bookshelf;
 
 import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Created by Robin on 25/09/2016.
@@ -13,23 +12,20 @@ public class OptionSelector{
 
     public void optionOne(Bookshelf bookshelf){
         System.out.print("\nHere are the books available: \n");
-        bookshelf.printCheckedInBookInfo();
+        bookshelf.printCheckedInItemInfo();
     }
     public void optionTwo(Bookshelf bookshelf) {
         UserInput userInput = new UserInput();
         userInput.showPrompt("\nEnter the book you wish to return:");
         String selection = userInput.returnString();
-        //this stuff is potentially bad because this is where it's getting a selection from.
-        Book selectedBook = bookshelf.retrieveBookFromTitle(selection);
-        bookshelf.checkIn(selectedBook);
+        bookshelf.checkIn(selection);
     }
 
     public void optionThree(Bookshelf bookshelf){
         UserInput userInput = new UserInput();
         userInput.showPrompt("\nEnter the book you wish to checkout:");
         String selection = userInput.returnString();
-        Book selectedBook = bookshelf.retrieveBookFromTitle(selection);
-        bookshelf.checkOut(selectedBook);
+        bookshelf.checkOut(selection);
     }
 
     public void select(Integer input, Bookshelf bookshelf) {

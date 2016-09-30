@@ -2,6 +2,7 @@ package com.biblioteca;
 
 import com.biblioteca.Items.Book;
 
+import com.biblioteca.Shelves.Bookshelf;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -85,13 +86,12 @@ public class BookshelfTest {
     public void printsBooksWithInfoAsColumns(){
         bookshelf.addBooks(checkedInBookInitially);
         bookshelf.addBooks(checkedOutBookInitially);
-        when(checkedInBookInitially.getAuthor()).thenReturn("Dickens");
-        when(checkedInBookInitially.getDatePublishedString()).thenReturn("12/07/1860");
+        when(checkedInBookInitially.getCreator()).thenReturn("Dickens");
         when(checkedInBookInitially.getTitle()).thenReturn("Oliver Twist");
-        when(checkedOutBookInitially.getAuthor()).thenReturn("Dickens");
-        when(checkedOutBookInitially.getDatePublishedString()).thenReturn("11/07/1860");
+        when(checkedOutBookInitially.getCreator()).thenReturn("Dickens");
+//        when(checkedOutBookInitially.getDatePublishedString()).thenReturn("11/07/1860");
         when(checkedOutBookInitially.getTitle()).thenReturn("The Tale of Two Cities");
-        bookshelf.printCheckedInBookInfo();
+        bookshelf.printCheckedInItemInfo();
         assertEquals("AUTHOR                         TITLE                          PUBLICATION DATE               \nDickens                        Oliver Twist                   12/07/1860                     \n", outputStream.toString());
 
 

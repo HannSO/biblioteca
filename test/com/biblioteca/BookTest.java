@@ -49,9 +49,9 @@ public class BookTest {
     @Test
     public void getsTitle(){assertEquals("Oliver Twist", book.getTitle());}
     @Test
-    public void getsAuthor(){assertEquals("Dickens", book.getAuthor());}
+    public void getsCreator(){assertEquals("Dickens", book.getCreator());}
     @Test
-    public void getsDatePublished(){assertEquals(date, book.getDatePublished());}
-    @Test
-    public void getDatePublishedString(){assertEquals(dateString, book.getDatePublishedString());}
+    public void getsDateCirculated(){assertEquals(date, book.getDateCirculated());}
+//    @Test
+//    public void getDatePublishedString(){assertEquals(dateString, book.getDatePublishedString());}
 }
