@@ -17,45 +17,6 @@ public class Book extends Item {
         super(t, d, c);
     }
 
-//
-//    public boolean isCheckedIn(){
-//        return checkedIn;
-//    }
-//
-//    public void checkIn(){
-//        checkedIn = true;
-//    }
-//
-//    public void checkOut() {
-//        checkedIn = false;
-//    }
-//
-//    public String getAuthor(){
-//        return author;
-//    }
-//
-//   public Date getDatePublished(){
-//       return datePublished;
-//   }
-//
-//   public String getTitle(){
-//        return title;
-//    }
 
-//   public void setDatePublished(String stringDate){
-//
-//       DateFormat df = new SimpleDateFormat("MM/dd/yyyy");
-//       try {
-//           datePublished = df.parse(stringDate);
-//       }
-//       catch (ParseException e) {
-//           e.printStackTrace();
-//       }
-//       stringDatePublished = stringDate;
-//   }
-
-//   public String getDatePublishedString(){
-//       return stringDatePublished;
-//   }
 }
 

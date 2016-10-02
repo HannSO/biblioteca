@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * Created by Robin on 28/09/2016.
  */
-public class Film {
+public class Film extends Item{
 
     private String title;
     private String director;
@@ -13,14 +13,17 @@ public class Film {
     private Date dateReleased;
     private Boolean checkedIn;
 
-
-    public Film(String filmTitle, String filmDirector, Date filmDateReleased, Integer filmRating) {
-        title = filmTitle;
-        director = filmDirector;
-        dateReleased = filmDateReleased;
-        rating = filmRating;
-        checkedIn = true;
+    public Film(String t, Date d, String c) {
+        super(t, d, c);
     }
+
+//    public Film(String filmTitle, String filmDirector, Date filmDateReleased, Integer filmRating) {
+//        title = filmTitle;
+//        director = filmDirector;
+//        dateReleased = filmDateReleased;
+//        rating = filmRating;
+//        checkedIn = true;
+//    }
 
 //    @Override
 //    public void printCheckedInItemsInfo() {
@@ -65,9 +68,9 @@ public class Film {
 //    public String getReleaseDateAsString() {
 //        return dateReleasedString;
 //    }
-
-    public Integer getRating() {
-        return rating;
-    }
+//
+//    public Integer getRating() {
+//        return rating;
+//    }
 
 }

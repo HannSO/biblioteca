@@ -10,8 +10,8 @@ import java.text.ParseException;
  * Created by Robin on 20/09/2016.
  */
 public class BibliotecaApp {
-    private Message message;
-    public Bookshelf bookshelf;
+//    public Message message;
+    
     private static Book book;
     private static Book bookTwo;
     private static OptionSelector optionSelector;
@@ -19,13 +19,24 @@ public class BibliotecaApp {
     private static Integer integerInput;
     private static Menu menu;
     private static Parser parser = new Parser();
+    private static LibraryBuilder library;
+
+    static {
+        try {
+            library = new LibraryBuilder();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private static Message message = new Message();
+
     public static void main(String [] args) throws ParseException {
         createMenu();
-        Bookshelf bookshelf = new Bookshelf();
-        loadBooks(bookshelf);
-        Message message = new Message();
+        library.buildAndLoadBookshelf();
+        library.buildAndLoadFilmShelf();
         message.print();
-        showAndExecuteMenu(bookshelf);
+        showAndExecuteMenu(library.bookshelf);
     }
 
     public static void createMenu(){
