@@ -1,12 +1,5 @@
 package com.biblioteca.Shelves;
 
-/**
- * Created by Robin on 29/09/2016.
-
-
-/**
- * Created by Robin on 29/09/2016.
- */
 
 public class ShelfMessagePrinter {
 
@@ -23,4 +16,5 @@ public class ShelfMessagePrinter {
     }
 
     public void printCheckOutSuccess(){System.out.print("Item checked out. Enjoy!");}
+
 }

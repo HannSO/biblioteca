@@ -12,19 +12,20 @@ public class OptionSelector{
 
 
     public void optionOne(Shelf shelf){
-        System.out.print("\nHere are the items available in this category: \n");
+        UserInput userInput = new UserInput();
+        userInput.showPrompt("Here are the items available in this category:");
         shelf.printCheckedInItemsInfo();
     }
     public void optionTwo(Shelf shelf) {
         UserInput userInput = new UserInput();
-        userInput.showPrompt("\nEnter the item title you wish to return:\n");
+        userInput.showPrompt("Enter the item title you wish to return:");
         String selection = userInput.returnString();
         shelf.checkIn(selection);
     }
 
     public void optionThree(Shelf shelf){
         UserInput userInput = new UserInput();
-        userInput.showPrompt("\nEnter the item you wish to checkout:\n");
+        userInput.showPrompt("Enter the item you wish to checkout:");
         String selection = userInput.returnString();
         shelf.checkOut(selection);
     }
@@ -41,13 +42,12 @@ public class OptionSelector{
             RunOption option = methodMap.get(input);
             option.run();;
         } catch (NullPointerException e){
-            System.out.print("Invalid menu option. Please try again.\n");
+            System.out.println("Invalid menu option. Please try again.");
         }
     }
 
 
     public static class RunOption {
-
             void run() {}
     }
 }

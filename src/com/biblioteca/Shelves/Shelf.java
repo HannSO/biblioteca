@@ -3,6 +3,8 @@ import com.biblioteca.Items.Item;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import static java.lang.String.valueOf;
+
 public class Shelf {
     public ArrayList<Item> items = new ArrayList();
     public ArrayList<Item> checkedInItems;
@@ -31,11 +33,10 @@ public class Shelf {
         }
     }
 
-    // THIS METHOD IS WRONG BECAUSE: COPY AND PASTED FROM CHECK IN
     public void checkOut(String string){
         Item thisItem;
         thisItem = identifyItemFromTitle(string);
-        if (thisItem != null) {
+        if ((thisItem != null) && thisItem.isCheckedIn())  {
             thisItem.checkOut();
             message.printCheckOutSuccess();}else{
             message.printUnavailable();
@@ -64,7 +65,8 @@ public class Shelf {
         Boolean found = false;
         Integer foundIndex = 0;
         for (int i = 0; i < items.size(); i++) {
-            if (Objects.equals(items.get(i).getTitle(),bookTitle)) {
+            if ((valueOf(items.get(i).getTitle())) == (valueOf(bookTitle))) {
+
                 found = true;
                 foundIndex = i;
             }
