@@ -51,7 +51,7 @@ public class Shelf {
         }
     }
 
-    private ArrayList<Item> listCheckedInItems(){
+    ArrayList<Item> listCheckedInItems(){
         checkedInItems = new ArrayList();
         for (int i = 0; i <items.size(); i++){
             if (items.get(i).isCheckedIn()){
