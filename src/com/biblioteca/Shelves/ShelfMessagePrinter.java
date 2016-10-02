@@ -19,7 +19,7 @@ public class ShelfMessagePrinter {
     };
 
     public void printInvalidReturn(){
-        System.out.print("That is not a valid book return.");
+        System.out.print("That is not a valid item return.");
     }
 
     public void printCheckOutSuccess(){System.out.print("Item checked out. Enjoy!");}

@@ -1,4 +1,4 @@
-package com.biblioteca;
+package com.biblioteca.Menu;
 
 import java.util.Hashtable;
 

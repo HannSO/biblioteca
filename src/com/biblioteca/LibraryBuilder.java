@@ -9,16 +9,13 @@ import com.biblioteca.Shelves.FilmShelf;
 import java.text.ParseException;
 
 
-/**
- * Created by Robin on 30/09/2016.
- */
 public class LibraryBuilder {
 
     public Parser parser = new Parser();
     public Bookshelf bookshelf;
     public FilmShelf filmCase;
-    private Book bookOne = new Book("Camus", parser.stringToDate("01/01/1955"), "The Outsider");
-    private Book bookTwo = new Book("Voltaire",parser.stringToDate("1/1/1760"), "Candid");
+    private Book bookOne = new Book("The Outsider", parser.stringToDate("01/01/1955"), "Camus");
+    private Book bookTwo = new Book("Candid",parser.stringToDate("1/1/1760"),"Voltaire" );
     private Film filmOne = new Film("Fight Club",parser.stringToDate("01/01/1999"), "David Fincher");
     private Film filmTwo = new Film("Spirited Away", parser.stringToDate("01/01/2001"), "Hayao Miyazaki");
 

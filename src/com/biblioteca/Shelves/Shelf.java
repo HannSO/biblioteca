@@ -1,13 +1,8 @@
 package com.biblioteca.Shelves;
-
 import com.biblioteca.Items.Item;
-
 import java.util.ArrayList;
 import java.util.Objects;
 
-/**
- * Created by Robin on 29/09/2016.
- */
 public class Shelf {
     public ArrayList<Item> items = new ArrayList();
     public ArrayList<Item> checkedInItems;
@@ -69,7 +64,7 @@ public class Shelf {
         Boolean found = false;
         Integer foundIndex = 0;
         for (int i = 0; i < items.size(); i++) {
-            if (Objects.equals(items.get(i).getCreator(),bookTitle)) {
+            if (Objects.equals(items.get(i).getTitle(),bookTitle)) {
                 found = true;
                 foundIndex = i;
             }

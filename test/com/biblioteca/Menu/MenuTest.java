@@ -1,4 +1,5 @@
-package com.biblioteca;
+package com.biblioteca.Menu;
+import com.biblioteca.Menu.Menu;
 import org.junit.Before;
 import org.junit.Test;
 

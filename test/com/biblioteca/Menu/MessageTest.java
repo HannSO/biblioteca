@@ -1,6 +1,7 @@
-package com.biblioteca;
+package com.biblioteca.Menu;
 
 
+import com.biblioteca.Menu.Message;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -27,8 +28,8 @@ public class MessageTest {
     }
 
     @Test
-    public void printsMessage() {
-        message.print();
-        assertEquals("Welcome to biblioteca!\n Select an option\n", outputStream.toString());
+    public void printsHomeMessage() {
+        message.printHome();
+        assertEquals("Welcome to biblioteca homepage! Select category you want to investigate\n", outputStream.toString());
     }
 }
