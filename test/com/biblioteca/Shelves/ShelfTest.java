@@ -4,14 +4,13 @@ import com.biblioteca.Items.Item;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.ByteArrayOutputStream;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.*;
 
 public class ShelfTest {
         private Shelf shelf;
-        private ByteArrayOutputStream outputStream;
+
         private Item checkedInItemInitially;
         private Item checkedOutItemInitially;
         private ShelfMessagePrinter message;
@@ -21,7 +20,6 @@ public class ShelfTest {
         public void beforeEach() {
             createMessagePrinterMockAndBehaviour();
             shelf = new Shelf(message);
-            outputStream = new ByteArrayOutputStream();
             createItemMocksAndBehaviour();
 
         }

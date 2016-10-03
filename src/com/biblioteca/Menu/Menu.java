@@ -18,7 +18,7 @@ public class Menu {
     }
 
     public void displayOptions() {
-        System.out.println("\nSelect an option:");
+        System.out.println("\nItem Menu:");
         System.out.println((Arrays.toString(options.entrySet().toArray()))+"\n");
     }
 

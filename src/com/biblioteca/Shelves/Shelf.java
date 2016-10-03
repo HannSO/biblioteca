@@ -63,14 +63,12 @@ public class Shelf {
 
     private Item identifyItemFromTitle(String bookTitle) {
         Boolean found = false;
-        Integer foundIndex = 0;
-        for (int i = 0; i < items.size(); i++) {
-            if ((valueOf(items.get(i).getTitle())) == (valueOf(bookTitle))) {
-
-                found = true;
+        Integer foundIndex = -1;
+        for (int i = 0; i < (items.size()); i++)
+            if (valueOf(items.get(i).getTitle()) == valueOf(bookTitle)) {
                 foundIndex = i;
+                found = true;
             }
-        }
         if (found) {
             return items.get(foundIndex);
         }   else {
