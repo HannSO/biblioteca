@@ -30,6 +30,8 @@ public class MessageTest {
     @Test
     public void printsHomeMessage() {
         message.printHome();
-        assertEquals("Welcome to biblioteca homepage! Select category you want to investigate\n", outputStream.toString());
+        assertEquals("Welcome to biblioteca homepage!" +
+                "\n    Enter '1' to look at book options and '2' for films." +
+                "\n    Type '99' to quit.\n", outputStream.toString());
     }
 }

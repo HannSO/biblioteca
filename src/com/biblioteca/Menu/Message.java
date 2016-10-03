@@ -1,8 +1,6 @@
 package com.biblioteca.Menu;
 
-/**
- * Created by Robin on 20/09/2016.
- */
+
 public class Message {
 
     public void printHome() {

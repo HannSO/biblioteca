@@ -4,9 +4,6 @@ import com.biblioteca.Parser;
 
 import java.util.Date;
 
-/**
- * Created by Robin on 28/09/2016.
- */
 public class Item {
 
     private String title;

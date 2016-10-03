@@ -1,5 +1,9 @@
 package com.biblioteca.Menu;
+//
+//import com.biblioteca.PrettyPrintingMap;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Hashtable;
 
 /**
@@ -14,7 +18,9 @@ public class Menu {
     }
 
     public void displayOptions() {
-        System.out.println("\nSelect an option:\n" + options);
+        System.out.println("\nItem Menu:");
+        System.out.println((Arrays.toString(options.entrySet().toArray()))+"\n");
     }
+
 }
 
