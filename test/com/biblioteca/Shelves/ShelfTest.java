@@ -21,7 +21,6 @@ public class ShelfTest {
             createMessagePrinterMockAndBehaviour();
             shelf = new Shelf(message);
             createItemMocksAndBehaviour();
-
         }
 
         public void createMessagePrinterMockAndBehaviour() {
