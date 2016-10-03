@@ -10,9 +10,7 @@ import java.util.Date;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by Robin on 28/09/2016.
- */
+
 public class ItemTest {
 
     private Item item;
